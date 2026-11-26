@@ -1,0 +1,18 @@
+[build]
+  publish = "dist_netlify"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/download/apk"
+  to = "/OmniAgent_Android_Installer.apk"
+  status = 200
+
+[[redirects]]
+  from = "/static/*"
+  to = "/:splat"
+  status = 200
