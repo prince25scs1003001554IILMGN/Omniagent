@@ -1,0 +1,5 @@
+# Netlify Redirects for OmniAgent
+/api/*  /.netlify/functions/api/:splat  200
+/download/apk  /OmniAgent_Android_Installer.apk  200
+/static/*  /:splat  200
+/*  /index.html  200
